@@ -2,21 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nested Tables Layout</title>
+    <title>Nested Tables</title>
     <style>
         table {
             border-collapse: collapse;
             width: 100%;
         }
-        td, th {
+        table, th, td {
             border: 1px solid black;
+        }
+        th, td {
             padding: 6px;
             text-align: center;
         }
         .main td {
-            vertical-align: top;
             width: 50%;
-            height: 200px;
+            vertical-align: top;
+            height: 180px;
         }
         .black {
             background-color: black;
@@ -29,7 +31,7 @@
 
 <table class="main">
     <tr>
-        <!-- Top Left -->
+        <!-- Nested Table 2 -->
         <td>
             <table>
                 <caption><b>Nested Table 2</b></caption>
@@ -44,16 +46,16 @@
             </table>
         </td>
 
-        <!-- Top Right -->
+        <!-- Nested Table 1 -->
         <td>
             <table>
                 <caption><b>Nested Table 1</b></caption>
                 <tr>
                     <td>
                         <ul>
-                            <li>List item</li>
-                            <li>List item</li>
-                            <li>List item</li>
+                            <li>List item 1</li>
+                            <li>List item 2</li>
+                            <li>List item 3</li>
                         </ul>
                     </td>
                 </tr>
@@ -62,7 +64,7 @@
     </tr>
 
     <tr>
-        <!-- Bottom Left -->
+        <!-- Nested Table 3 -->
         <td>
             <table>
                 <caption><b>Nested Table 3</b></caption>
@@ -73,7 +75,7 @@
             </table>
         </td>
 
-        <!-- Bottom Right -->
+        <!-- Nested Table 4 -->
         <td>
             <table>
                 <caption><b>Nested Table 4</b></caption>
